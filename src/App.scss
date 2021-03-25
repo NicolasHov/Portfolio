@@ -45,28 +45,6 @@ $input-shadow: none;
 
 /* CSS: Bulma package is already installed -> see https://bulma.io/documentation/  */
 
-/* ############ IMPORT FROM NOTION AND FROM WEBSITE PROFILE*/
-
-  @media only screen {
-    body {
-      margin: 2em auto;
-      max-width: 900px;
-      color: rgb(55, 53, 47);
-    }
-  }
-
-  body {
-    font-family: $family-sans-serif;
-    line-height: 1.5;
-    white-space: pre-wrap;
-  }
-
-  body {
-    animation: fade-in 1s ease;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
   a,
   a.visited {
     color: inherit;
