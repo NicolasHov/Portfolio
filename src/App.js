@@ -1,4 +1,4 @@
-import './App.scss';
+import './App.css';
 import ColumnLeft from './components/ColumnLeft';
 import ColumnRight from './components/ColumnRight';
 import Header from './components/Header';

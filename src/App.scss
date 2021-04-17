@@ -2,7 +2,7 @@
 @import "../node_modules/bulma/bulma.sass";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 // Set your brand colors
 $purple: #8a4d76;
@@ -12,7 +12,7 @@ $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
 // Update Bulma's global variables
-$family-sans-serif: 'Nunito', sans-serif;
+$family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
@@ -27,114 +27,140 @@ $input-border-color: transparent;
 $input-shadow: none;
 
 // Import only what you need from Bulma
-@import '../node_modules/bulma/sass/utilities/_all.sass';
-@import '../node_modules/bulma/sass/base/_all.sass';
-@import '../node_modules/bulma/sass/elements/button.sass';
-@import '../node_modules/bulma/sass/elements/container.sass';
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
 // @import '../node_modules/bulma/sass/elements/form.sass';
-@import '../node_modules/bulma/sass/elements/title.sass';
+// @import "../node_modules/bulma/sass/elements/title.sass";
 // @import '../node_modules/bulma/sass/components/navbar.sass';
 // @import '../node_modules/bulma/sass/layout/hero.sass';
-@import '../node_modules/bulma/sass/layout/section.sass';
-
-
+// @import "../node_modules/bulma/sass/layout/section.sass";
 
 .App {
   text-align: center;
+  margin: 40px;
 }
 
 /* CSS: Bulma package is already installed -> see https://bulma.io/documentation/  */
 
-  a,
-  a.visited {
-    color: inherit;
-    text-decoration: underline;
+a,
+a.visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+}
+
+// ######### HEADER
+
+header {
+  display: flex;
+}
+
+#avatar {
+  width: 110px;
+  display: flex;
+  overflow: hidden;
+  min-width: 110px;
+  min-height: 110px;
+  align-items: center;
+  border-radius: 20%;
+  justify-content: center;
+  background-color: #e6e6e6;
+  margin: 0px 20px 20px 0px;
+}
+
+#avatar img {
+  height: calc(100% + 2px);
+  object-fit: cover;
+}
+
+// #########
+
+h1 {
+  font-size: 1.875rem;
+  margin-top: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+figure {
+  margin: 1.25em 0;
+  page-break-inside: avoid;
+}
+
+figcaption {
+  opacity: 0.5;
+  font-size: 85%;
+  margin-top: 0.5em;
+}
+
+// ############# Box
+
+.hover {
+  // position: relative;
+
+  &:hover &__no-hover {
+    opacity: 0;
   }
 
-  h1,
-  h2,
-  h3 {
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-    font-weight: 600;
-    margin-bottom: 0;
+  &:hover &__hover {
+    opacity: 1;
+    transition: 0.7s;
   }
 
-  .page-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 0.75em;
+  &__hover {
+    // position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s;
   }
 
-  // ######### HEADER
+  &__no-hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+}
 
-  header {
-    display: flex;
-  }
+// ############# ColumnLeft
 
-  #avatar { 
-    width: 110px;
-    display: flex;
-    overflow: hidden;
-    min-width: 110px;
-    min-height: 110px;
-    align-items: center;
-    border-radius: 20%;
-    justify-content: center;
-    background-color: #E6E6E6;
-    margin: 0px 20px 20px 0px;
-  }
-  
-  #avatar img {
-    height: calc(100% + 2px);
-    object-fit: cover;
-  }
-  
-    // ######### 
+// card hobbies :
+.noPadding {
+  padding: 0rem;
+}
 
-  h1 {
-    font-size: 1.875rem;
-    margin-top: 1.875rem;
-  }
+.borderRadiusBottom {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px !important;
+}
 
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-  }
+// ############# ColumnRight
 
-  h3 {
-    font-size: 1.25rem;
-    margin-top: 1.25rem;
-  }
-
-  figure {
-    margin: 1.25em 0;
-    page-break-inside: avoid;
-  }
-
-  figcaption {
-    opacity: 0.5;
-    font-size: 85%;
-    margin-top: 0.5em;
-  }
-
-  // ############# ColumnLeft
-  
-  // card hobbies :
-  .noPadding {
-    padding: 0rem;
-  }
-  
-  .borderRadiusBottom {
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px!important;
-  }
-  
-  // ############# ColumnRight
-
-  .spotify {
-    width:100%;
-    min-width:300px;
-    min-height:380px;
-  }
+.spotify {
+  width: 100%;
+  min-width: 300px;
+  min-height: 380px;
+}
