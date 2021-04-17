@@ -27,7 +27,7 @@ export default function ColumnLeft() {
                     <div>
                         <h2>Je code avec React</h2>
                         {/* <figure className="image">
-                            <img src="https://process.filestackapi.com/output=format:png/negative/modulate=brightness:1000/compress/KKn2Q218TaeF51faVayy" alt="" />
+                            <img src="" alt="" />
                         </figure> */}
                     </div>
                 </Hover>
